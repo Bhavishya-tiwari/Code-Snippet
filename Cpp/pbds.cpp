@@ -25,9 +25,11 @@ using namespace std;
     cout.tie(0);
 
 
+
 void solve_kr_be()
 {
     // oset<pair<int,int>> st;
+    // oset ki jagah kuch bhi name rakh skte hai
     // because of template class we used we can create oset of any data type
     oset<int> st;
     st.insert(1);
