@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 #include <limits.h>
+
+// pbds
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
+template<class T> using oset = tree<T, null_type, less<T>,
+                         rb_tree_tag, tree_order_statistics_node_update>;
+
+
 using namespace std;
 #define ll long long int
 #define pb(x) push_back(x)
@@ -15,12 +24,6 @@ using namespace std;
     cin.tie(0);                   \
     cout.tie(0);
 
-// pbds
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace __gnu_pbds;
-template<class T> using oset = tree<T, null_type, less<T>,
-                         rb_tree_tag, tree_order_statistics_node_update>;
 
 
 void solve_kr_be()
@@ -38,4 +41,17 @@ void solve_kr_be()
 
     // cout number of elements smaller then t
     // cout<<*s.order_of_key(t);
+
+}
+int main()
+{
+    // fio
+    ll TestCases;
+    cin >> TestCases;
+    while (TestCases--)
+    {
+        solve_kr_be();
+    }
+
+    return 0;
 }
